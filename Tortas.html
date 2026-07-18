@@ -1,0 +1,203 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+ <header class="main-header">
+        <div class="header-overlay">
+            <div class="logo-container">
+                <span class="arrows">&gt;&gt;</span>
+                <img src="imagenes/1.png" alt="Sweet World Logo" class="logo-img">
+            </div>
+            <div class="header-text">
+                <p>Creamos un mundo de sabor con repostería artesanal, cupcakes temáticos y postres ideales para tus eventos.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkbox oculto que controlará abrir/cerrar el menú -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+<!-- Botón para abrir (>>), ahora es un label conectado al checkbox -->
+    <label for="menu-toggle" class="sidebar-toggle-btn">&gt;&gt;</label>
+
+<!-- Fondo oscuro que aparece detrás del menú -->
+    <label for="menu-toggle" class="sidebar-overlay"></label>
+
+<!-- BARRA LATERAL -->
+    <aside class="sidebar">
+    <!-- Botón para cerrar (<<), también conectado al checkbox -->
+        <label for="menu-toggle" class="sidebar-close-btn">&lt;&lt;</label>
+    
+        <div class="sidebar-logo">
+            <img src="imagenes/1.png" alt="Sweet World"> <!-- Reemplaza por tu logo -->
+        </div>
+
+        <nav class="sidebar-menu">
+            <ul>
+                <li><a href="Sweet World.html" class="menu-item">Inicio</a></li>
+            
+            <!-- Opción Catálogo usando <details> para desplegar sin JS -->
+                <li>
+                    <details class="menu-desplegable">
+                        <summary class="menu-item">Catálogo <span class="arrow-down">▼</span></summary>
+                        <ul class="submenu">
+                            <li><a href="Tortas.html">Tortas</a></li>
+                            <li><a href="Cupcakes.html">Cupcakes</a></li>
+                            <li><a href="#porciones">Porciones</a></li>
+                            <li><a href="#decoracion">Decoración</a></li>
+                        </ul>
+                    </details>
+                </li>
+            
+                <li><a href="#contacto" class="menu-item">Contactos</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+<section class="seccion-tortas">
+    <h1 class="titulo-pagina">Tortas</h1>
+
+    <!-- CATEGORÍA: VAINILLA -->
+    <div class="categoria-sabor">
+        <h2 class="titulo-sabor sabor-vainilla">Vainilla</h2>
+        <div class="grid-productos">
+            <!-- Torta 1 -->
+            <div class="item-torta">
+                <div class="contenedor-img border-dorado">
+                    <img src="imagenes/WhatsApp Image 2026-07-17 at 12.36.10 PM (6).jpeg" alt="Torta Vainilla 14cm">
+                    <span class="badge-precio bg-dorado">18.000<br><small>COP</small></span>
+                </div>
+                <p class="medida-torta">14cm</p>
+            </div>
+            <!-- Torta 2 -->
+            <div class="item-torta">
+                <div class="contenedor-img border-dorado">
+                    <img src="imagenes/WhatsApp Image 2026-07-17 at 12.30.06 PM.jpeg">
+                    <span class="badge-precio bg-dorado">36.000<br><small>COP</small></span>
+                </div>
+                <p class="medida-torta">1/4kg</p>
+            </div>
+            <!-- Torta 3 -->
+            <div class="item-torta">
+                <div class="contenedor-img border-dorado">
+                    <img src="imagenes/WhatsApp Image 2026-07-17 at 12.36.08 PM (1).jpeg" alt="Torta Vainilla 1/2kg">
+                    <span class="badge-precio bg-dorado">75.000<br><small>COP</small></span>
+                </div>
+                <p class="medida-torta">1/2kg</p>
+            </div>
+            <!-- Torta 4 -->
+            <div class="item-torta">
+                <div class="contenedor-img border-dorado">
+                    <img src="imagenes/WhatsApp Image 2026-07-17 at 12.36.10 PM.jpeg" alt="Torta Vainilla 1kg">
+                    <span class="badge-precio bg-dorado">150.000<br><small>COP</small></span>
+                </div>
+                <p class="medida-torta">1kg</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORÍA: CHOCOLATE -->
+    <div class="categoria-sabor">
+        <h2 class="titulo-sabor sabor-chocolate">Chocolate</h2>
+        <div class="grid-productos">
+            <!-- Torta 1 -->
+            <div class="item-torta">
+                <div class="contenedor-img border-marron">
+                    <img src="imagenes/WhatsApp Image 2026-07-17 at 12.36.07 PM.jpeg" alt="Torta Chocolate 14cm">
+                    <span class="badge-precio bg-marron">20.000<br><small>COP</small></span>
+                </div>
+                <p class="medida-torta">14cm</p>
+            </div>
+            <!-- Torta 2 -->
+            <div class="item-torta">
+                <div class="contenedor-img border-marron">
+                    <img src="imagenes/WhatsApp Image 2026-07-17 at 12.36.09 PM (2).jpeg" alt="Torta Chocolate 1/4kg">
+                    <span class="badge-precio bg-marron">46.000<br><small>COP</small></span>
+                </div>
+                <p class="medida-torta">1/4kg</p>
+            </div>
+            <!-- Torta 3 -->
+            <div class="item-torta">
+                <div class="contenedor-img border-marron">
+                    <img src="imagenes/WhatsApp Image 2026-07-17 at 12.36.08 PM.jpeg" alt="Torta Chocolate 1/2kg">
+                    <span class="badge-precio bg-marron">90.000<br><small>COP</small></span>
+                </div>
+                <p class="medida-torta">1/2kg</p>
+            </div>
+            <!-- Torta 4 -->
+            <div class="item-torta">
+                <div class="contenedor-img border-marron">
+                    <img src="imagenes/WhatsApp Image 2026-07-17 at 12.36.07 PM (2).jpeg" alt="Torta Chocolate 1kg">
+                    <span class="badge-precio bg-marron">170.000<br><small>COP</small></span>
+                </div>
+                <p class="medida-torta">1kg</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORÍA: RED VELVET -->
+    <div class="categoria-sabor">
+        <h2 class="titulo-sabor sabor-redvelvet">Red Velvet</h2>
+        <div class="grid-productos">
+            <!-- Torta 1 -->
+            <div class="item-torta">
+                <div class="contenedor-img border-rojo">
+                    <img src="imagenes/WhatsApp Image 2026-07-17 at 12.36.09 PM.jpeg" alt="Torta Red Velvet 14cm">
+                    <span class="badge-precio bg-rojo">20.000<br><small>COP</small></span>
+                </div>
+                <p class="medida-torta">14cm</p>
+            </div>
+            <!-- Torta 2 -->
+            <div class="item-torta">
+                <div class="contenedor-img border-rojo">
+                    <img src="imagenes/99.png" alt="Torta Red Velvet 1/4kg">
+                    <span class="badge-precio bg-rojo">46.000<br><small>COP</small></span>
+                </div>
+                <p class="medida-torta">1/4kg</p>
+            </div>
+            <!-- Torta 3 -->
+            <div class="item-torta">
+                <div class="contenedor-img border-rojo">
+                    <img src="imagenes/88.png" alt="Torta Red Velvet 1/2kg">
+                    <span class="badge-precio bg-rojo">90.000<br><small>COP</small></span>
+                </div>
+                <p class="medida-torta">1/2kg</p>
+            </div>
+            <!-- Torta 4 -->
+            <div class="item-torta">
+                <div class="contenedor-img border-rojo">
+                    <img src="imagenes/WhatsApp Image 2026-07-17 at 12.36.07 PM (1).jpeg" alt="Torta Red Velvet 1kg">
+                    <span class="badge-precio bg-rojo">170.000<br><small>COP</small></span>
+                </div>
+                <p class="medida-torta">1kg</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PIE DE SECCIÓN: INSTRUCCIONES Y BOTÓN DE ACCIÓN -->
+    <div class="footer-cotizacion">
+        <div class="instrucciones-cotizar">
+            <h3>🎂 ¡Pide tu cotización final!</h3>
+            <ul>
+                <li><strong>Tamaño:</strong> Selecciona entre mini cake (15 cm), 1/4 de kg, 1/2 kg o 1 kg.</li>
+                <li><strong>Sabor del bizcocho:</strong> Vainilla, chocolate, marmolado o red velvet.</li>
+                <li><strong>Relleno:</strong> Chantillí, buttercream o ganache de chocolate.</li>
+                <li><strong>Tu idea:</strong> Adjunta o envíanos una foto de referencia de la decoración que sueñas.</li>
+            </ul>
+        </div>
+        </div>
+        <!-- Enlace directo al formulario que creamos anteriormente -->
+        <a href="https://wa.me/584247336783" class="btn-cotizar-link">
+            Cotizar
+            <svg class="w-icon" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.4-4.19-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.183 8.183 0 0 1-1.26-4.38c0-4.54 3.7-8.22 8.25-8.22m-3.61 5.09c-.2-.44-.42-.45-.61-.45c-.16 0-.34-.01-.52-.01c-.19 0-.49.07-.75.34c-.26.27-1 1-1 2.45s1.05 2.85 1.2 3.05c.14.19 2.07 3.16 5.02 4.43c.7.3 1.25.48 1.68.62c.71.22 1.35.19 1.86.12c.57-.08 1.74-.71 1.98-1.4c.25-.69.25-1.28.17-1.4c-.07-.12-.27-.19-.57-.34c-.3-.15-1.74-.86-2.01-.95c-.26-.1-.45-.15-.65.15c-.2.3-.76.95-.93 1.15c-.17.19-.34.22-.64.07c-.3-.15-1.26-.47-2.39-1.48c-.88-.79-1.48-1.76-1.65-2.05c-.17-.29-.02-.45.13-.6c.14-.14.3-.34.45-.51c.15-.17.2-.29.3-.49c.1-.2.05-.37-.02-.52c-.07-.15-.62-1.48-.84-2.02Z"/>
+            </svg>
+        </a>
+    </div>
+</section>

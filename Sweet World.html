@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-overlay">
+            <div class="logo-container">
+                <span class="arrows">&gt;&gt;</span>
+                <img src="imagenes/1.png" alt="Sweet World Logo" class="logo-img">
+            </div>
+            <div class="header-text">
+                <p>Creamos un mundo de sabor con repostería artesanal, cupcakes temáticos y postres ideales para tus eventos.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkbox oculto que controlará abrir/cerrar el menú -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+<!-- Botón para abrir (>>), ahora es un label conectado al checkbox -->
+    <label for="menu-toggle" class="sidebar-toggle-btn">&gt;&gt;</label>
+
+<!-- Fondo oscuro que aparece detrás del menú -->
+    <label for="menu-toggle" class="sidebar-overlay"></label>
+
+<!-- BARRA LATERAL -->
+    <aside class="sidebar">
+    <!-- Botón para cerrar (<<), también conectado al checkbox -->
+        <label for="menu-toggle" class="sidebar-close-btn">&lt;&lt;</label>
+    
+        <div class="sidebar-logo">
+            <img src="imagenes/1.png" alt="Sweet World"> <!-- Reemplaza por tu logo -->
+        </div>
+
+        <nav class="sidebar-menu">
+            <ul>
+                <li><a href="Sweet World.html" class="menu-item">Inicio</a></li>
+            
+            <!-- Opción Catálogo usando <details> para desplegar sin JS -->
+                <li>
+                    <details class="menu-desplegable">
+                        <summary class="menu-item">Catálogo <span class="arrow-down">▼</span></summary>
+                        <ul class="submenu">
+                            <li><a href="Tortas.html">Tortas</a></li>
+                            <li><a href="Cupcakes.html">Cupcakes</a></li>
+                            <li><a href="#porciones">Porciones</a></li>
+                            <li><a href="#decoracion">Decoración</a></li>
+                        </ul>
+                    </details>
+                </li>
+            
+                <li><a href="#contacto" class="menu-item">Contactos</a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <section class="welcome-section">
+        <h1 class="welcome-title">¡Bienvenido!</h1>
+        <div class="welcome-content">
+            <div class="welcome-image-container">
+                <img src="imagenes/2.png" alt="Pastel de bienvenida" class="welcome-cake">
+            </div>
+            <div class="welcome-text">
+                <p>En <strong>Sweet World</strong> transformamos tus celebraciones en momentos inolvidables. Nos especializamos en repostería creativa y diseño de eventos, fusionando sabores irresistibles con decoraciones hechas a la medida. Desde un antojo de fin de semana hasta la fiesta del año, cuidamos cada detalle para que solo te preocupes por disfrutar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog-section">
+        <h2 class="catalog-title">Mira nuestro catálogo</h2>
+        <div class="catalog-grid">
+            <div class="catalog-card">
+                <div class="circle-frame">
+                    <img src="imagenes/3.png" alt="Tortas">
+                </div>
+                <h3>Tortas</h3>
+            </div>
+            <div class="catalog-card">
+                <div class="circle-frame">
+                    <img src="imagenes/4.png" alt="Cupcakes">
+                </div>
+                <h3>Cupcakes</h3>
+            </div>
+            <div class="catalog-card">
+                <div class="circle-frame">
+                    <img src="imagenes/5.png" alt="Porciones">
+                </div>
+                <h3>Porciones</h3>
+            </div>
+            <div class="catalog-card">
+                <div class="circle-frame">
+                    <img src="imagenes/6.png" alt="Decoración">
+                </div>
+                <h3>Decoración</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="brand-huge-title">
+                <span class="bg-text">SWEET</span>
+                <span class="fg-text">World</span>
+            </div>
+            <div class="contact-info">
+                <h2>Contáctanos.</h2>
+                <ul>
+                    <li><img src="imagenes/7.png" alt="WhatsApp" class="icon"> 0424-733 6783</li>
+                    <li><img src="imagenes/8.png" alt="Instagram" class="icon"> sweetworld.ve.sjc</li>
+                    <li><img src="imagenes/9.png" alt="Facebook" class="icon"> Sweet World</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-credits">
+        <p>2026 Sweet World. Todos los derechos reservados. | Diseñado por Dayana Porras.</p>
+    </footer>
+
+</body>
+</html>
